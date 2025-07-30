@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "HdTtu5gsoG9sdUe2xhAV0GepR3GFtJW52xyF2Jur7bc=",
+  "Source": "EventService",
+  "BasePath": "_content/EventService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EventService\\wwwroot",
+      "Source": "EventService",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EventManagementBackend\\EventService\\wwwroot\\",
+      "BasePath": "_content/EventService",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
