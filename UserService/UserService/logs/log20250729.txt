@@ -1,0 +1,172 @@
+2025-07-29 14:03:50.477 +03:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 14:03:50.797 +03:00 [INF] Now listening on: http://localhost:5016
+2025-07-29 14:03:50.803 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 14:03:50.805 +03:00 [INF] Hosting environment: Development
+2025-07-29 14:03:50.807 +03:00 [INF] Content root path: C:\Users\ASUS\Desktop\UserService\UserService
+2025-07-29 14:04:10.077 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5016/swagger/index.html - null null
+2025-07-29 14:04:10.221 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5016/swagger/index.html - 200 null text/html;charset=utf-8 144.4758ms
+2025-07-29 14:04:10.373 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5016/swagger/v1/swagger.json - null null
+2025-07-29 14:04:10.535 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5016/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 171.081ms
+2025-07-29 14:05:11.034 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5016/api/User/register - application/json 96
+2025-07-29 14:05:11.047 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-07-29 14:05:11.096 +03:00 [INF] Executing endpoint 'UserController.UserRegister (UserService)'
+2025-07-29 14:05:11.132 +03:00 [INF] Route matched with {action = "UserRegister", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegister(RegisterUserCommand) on controller UserController (UserService).
+2025-07-29 14:05:11.255 +03:00 [INF] [LOG] Loglama başladı.
+2025-07-29 14:05:13.173 +03:00 [INF] Executed DbCommand (64ms) [Parameters=[@__mail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[IsDeleted], [u].[LastName], [u].[Mail], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Mail] = @__mail_0
+2025-07-29 14:05:13.523 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Age], [IsDeleted], [LastName], [Mail], [Name], [Password])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-07-29 14:05:13.581 +03:00 [INF] [LOG] loglama bitti
+2025-07-29 14:05:13.595 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-07-29 14:05:13.606 +03:00 [INF] Executed action UserController.UserRegister (UserService) in 2467.3268ms
+2025-07-29 14:05:13.607 +03:00 [INF] Executed endpoint 'UserController.UserRegister (UserService)'
+2025-07-29 14:05:13.624 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5016/api/User/register - 200 null text/plain; charset=utf-8 2589.9506ms
+2025-07-29 14:05:46.867 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5016/api/User/login - application/json 93
+2025-07-29 14:05:46.885 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-29 14:05:46.891 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-29 14:05:46.896 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5016/api/User/login - 401 0 null 26.824ms
+2025-07-29 14:06:28.837 +03:00 [INF] Application is shutting down...
+2025-07-29 14:06:33.376 +03:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 14:06:33.623 +03:00 [INF] Now listening on: http://localhost:5016
+2025-07-29 14:06:33.626 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 14:06:33.628 +03:00 [INF] Hosting environment: Development
+2025-07-29 14:06:33.628 +03:00 [INF] Content root path: C:\Users\ASUS\Desktop\UserService\UserService
+2025-07-29 14:06:34.686 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5016/swagger/index.html - null null
+2025-07-29 14:06:34.842 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5016/swagger/index.html - 200 null text/html;charset=utf-8 157.215ms
+2025-07-29 14:06:35.011 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5016/swagger/v1/swagger.json - null null
+2025-07-29 14:06:35.188 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5016/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 177.437ms
+2025-07-29 14:06:44.773 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5016/api/User/login - application/json 93
+2025-07-29 14:06:44.794 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-07-29 14:06:44.846 +03:00 [INF] Executing endpoint 'UserController.Login (UserService)'
+2025-07-29 14:06:44.883 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginUserCommand) on controller UserController (UserService).
+2025-07-29 14:06:45.012 +03:00 [INF] [LOG] Loglama başladı.
+2025-07-29 14:06:46.525 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[@__mail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[IsDeleted], [u].[LastName], [u].[Mail], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Mail] = @__mail_0
+2025-07-29 14:06:46.656 +03:00 [INF] [LOG] loglama bitti
+2025-07-29 14:06:46.669 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-29 14:06:46.706 +03:00 [INF] Executed action UserController.Login (UserService) in 1815.0688ms
+2025-07-29 14:06:46.709 +03:00 [INF] Executed endpoint 'UserController.Login (UserService)'
+2025-07-29 14:06:46.720 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5016/api/User/login - 200 null application/json; charset=utf-8 1947.2739ms
+2025-07-29 14:07:32.910 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5016/api/User/register - application/json 96
+2025-07-29 14:07:32.916 +03:00 [INF] Executing endpoint 'UserController.UserRegister (UserService)'
+2025-07-29 14:07:32.932 +03:00 [INF] Route matched with {action = "UserRegister", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegister(RegisterUserCommand) on controller UserController (UserService).
+2025-07-29 14:07:32.961 +03:00 [INF] [LOG] Loglama başladı.
+2025-07-29 14:07:33.015 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__mail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[IsDeleted], [u].[LastName], [u].[Mail], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Mail] = @__mail_0
+2025-07-29 14:07:33.167 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Age], [IsDeleted], [LastName], [Mail], [Name], [Password])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-07-29 14:07:33.181 +03:00 [INF] [LOG] loglama bitti
+2025-07-29 14:07:33.183 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-07-29 14:07:33.186 +03:00 [INF] Executed action UserController.UserRegister (UserService) in 252.7188ms
+2025-07-29 14:07:33.192 +03:00 [INF] Executed endpoint 'UserController.UserRegister (UserService)'
+2025-07-29 14:07:33.194 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5016/api/User/register - 200 null text/plain; charset=utf-8 284.19ms
+2025-07-29 14:08:12.206 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5016/api/User/5391E5CC-16CF-49A1-AC41-A715F667995E - null null
+2025-07-29 14:08:12.263 +03:00 [INF] Executing endpoint 'UserController.DeleteUser (UserService)'
+2025-07-29 14:08:12.270 +03:00 [INF] Route matched with {action = "DeleteUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteUser(System.Guid) on controller UserController (UserService).
+2025-07-29 14:08:12.287 +03:00 [INF] Executing ForbidResult with authentication schemes (["Yalnızca kendi hesabınızı silebilirsiniz!"]).
+2025-07-29 14:08:12.296 +03:00 [INF] Executed action UserController.DeleteUser (UserService) in 23.6863ms
+2025-07-29 14:08:12.298 +03:00 [INF] Executed endpoint 'UserController.DeleteUser (UserService)'
+2025-07-29 14:08:12.303 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authentication handler is registered for the scheme 'Yalnızca kendi hesabınızı silebilirsiniz!'. The registered schemes are: Bearer. Did you forget to call AddAuthentication().Add[SomeAuthHandler]("Yalnızca kendi hesabınızı silebilirsiniz!",...)?
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ForbidAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ForbidResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-29 14:08:12.337 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5016/api/User/5391E5CC-16CF-49A1-AC41-A715F667995E - 500 null text/plain; charset=utf-8 131.1571ms
+2025-07-29 14:08:28.277 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5016/api/User/login - application/json 93
+2025-07-29 14:08:28.313 +03:00 [INF] Executing endpoint 'UserController.Login (UserService)'
+2025-07-29 14:08:28.314 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginUserCommand) on controller UserController (UserService).
+2025-07-29 14:08:28.324 +03:00 [INF] [LOG] Loglama başladı.
+2025-07-29 14:08:28.404 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__mail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[IsDeleted], [u].[LastName], [u].[Mail], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Mail] = @__mail_0
+2025-07-29 14:08:28.407 +03:00 [INF] [LOG] loglama bitti
+2025-07-29 14:08:28.408 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-29 14:08:28.409 +03:00 [INF] Executed action UserController.Login (UserService) in 93.2333ms
+2025-07-29 14:08:28.410 +03:00 [INF] Executed endpoint 'UserController.Login (UserService)'
+2025-07-29 14:08:28.411 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5016/api/User/login - 200 null application/json; charset=utf-8 134.4512ms
+2025-07-29 14:08:51.076 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5016/api/User/75E5ACF7-3E9F-47F5-AD1D-0BFDC2654919 - null null
+2025-07-29 14:08:51.080 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2025-07-29 14:08:51.105 +03:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-07-29 14:08:51.108 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-29 14:08:51.115 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-29 14:08:51.118 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5016/api/User/75E5ACF7-3E9F-47F5-AD1D-0BFDC2654919 - 401 0 null 41.7549ms
+2025-07-29 14:09:03.703 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5016/swagger/index.html - null null
+2025-07-29 14:09:03.712 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5016/swagger/index.html - 200 null text/html;charset=utf-8 8.4311ms
+2025-07-29 14:09:03.861 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5016/swagger/v1/swagger.json - null null
+2025-07-29 14:09:03.893 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5016/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.9432ms
+2025-07-29 14:09:17.624 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5016/api/User/login - application/json 93
+2025-07-29 14:09:17.627 +03:00 [INF] Executing endpoint 'UserController.Login (UserService)'
+2025-07-29 14:09:17.628 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginUserCommand) on controller UserController (UserService).
+2025-07-29 14:09:17.641 +03:00 [INF] [LOG] Loglama başladı.
+2025-07-29 14:09:17.662 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__mail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[IsDeleted], [u].[LastName], [u].[Mail], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Mail] = @__mail_0
+2025-07-29 14:09:17.667 +03:00 [INF] [LOG] loglama bitti
+2025-07-29 14:09:17.668 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-29 14:09:17.673 +03:00 [INF] Executed action UserController.Login (UserService) in 39.8611ms
+2025-07-29 14:09:17.676 +03:00 [INF] Executed endpoint 'UserController.Login (UserService)'
+2025-07-29 14:09:17.677 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5016/api/User/login - 200 null application/json; charset=utf-8 53.5906ms
+2025-07-29 14:09:46.185 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5016/api/User/75E5ACF7-3E9F-47F5-AD1D-0BFDC2654919 - null null
+2025-07-29 14:09:46.200 +03:00 [INF] Executing endpoint 'UserController.DeleteUser (UserService)'
+2025-07-29 14:09:46.201 +03:00 [INF] Route matched with {action = "DeleteUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteUser(System.Guid) on controller UserController (UserService).
+2025-07-29 14:09:46.222 +03:00 [INF] [LOG] Loglama başladı.
+2025-07-29 14:09:46.311 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[IsDeleted], [u].[LastName], [u].[Mail], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__p_0
+2025-07-29 14:09:46.330 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [IsDeleted] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-07-29 14:09:46.337 +03:00 [INF] [LOG] loglama bitti
+2025-07-29 14:09:46.340 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-07-29 14:09:46.342 +03:00 [INF] Executed action UserController.DeleteUser (UserService) in 138.6761ms
+2025-07-29 14:09:46.345 +03:00 [INF] Executed endpoint 'UserController.DeleteUser (UserService)'
+2025-07-29 14:09:46.346 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5016/api/User/75E5ACF7-3E9F-47F5-AD1D-0BFDC2654919 - 200 null text/plain; charset=utf-8 161.0433ms
+2025-07-29 14:10:26.209 +03:00 [INF] Application is shutting down...
+2025-07-29 14:10:31.143 +03:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-29 14:10:31.310 +03:00 [INF] Now listening on: http://localhost:5016
+2025-07-29 14:10:31.317 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 14:10:31.319 +03:00 [INF] Hosting environment: Development
+2025-07-29 14:10:31.322 +03:00 [INF] Content root path: C:\Users\ASUS\Desktop\UserService\UserService
+2025-07-29 14:11:39.866 +03:00 [INF] Application is shutting down...

@@ -1,0 +1,10 @@
+using UserService.Models;
+using MediatR;
+
+namespace UserService.Models
+{
+    public class GetUserByIdQuery : IRequest<User>
+    {
+        public Guid Id { get; set; }
+    } 
+}

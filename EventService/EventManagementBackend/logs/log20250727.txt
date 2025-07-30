@@ -1,0 +1,13 @@
+2025-07-27 17:01:12.973 +03:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-27 17:01:13.261 +03:00 [INF] Now listening on: http://localhost:5248
+2025-07-27 17:01:13.319 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-27 17:01:13.325 +03:00 [INF] Hosting environment: Development
+2025-07-27 17:01:13.326 +03:00 [INF] Content root path: C:\Users\ASUS\Desktop\EventService\EventService
+2025-07-27 17:01:29.010 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5248/swagger/index.html - null null
+2025-07-27 17:01:29.249 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5248/swagger/index.html - 200 null text/html;charset=utf-8 241.3618ms
+2025-07-27 17:01:29.421 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5248/swagger/v1/swagger.json - null null
+2025-07-27 17:01:29.617 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5248/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 196.6447ms
+2025-07-27 17:01:34.426 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5248/swagger/index.html - null null
+2025-07-27 17:01:34.432 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5248/swagger/index.html - 200 null text/html;charset=utf-8 5.4379ms
+2025-07-27 17:01:34.603 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5248/swagger/v1/swagger.json - null null
+2025-07-27 17:01:34.611 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5248/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.7016ms
