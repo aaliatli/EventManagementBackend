@@ -66,3 +66,26 @@ System.ArgumentException: Empty extension is not supported.
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
 2025-07-30 15:57:49.977 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5248/api/Event/export-excel - 500 null text/plain; charset=utf-8 4661.1513ms
 2025-07-30 15:58:56.733 +03:00 [INF] Application is shutting down...
+2025-07-30 15:59:01.963 +03:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-30 15:59:02.191 +03:00 [INF] Now listening on: http://localhost:5248
+2025-07-30 15:59:02.204 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-30 15:59:02.206 +03:00 [INF] Hosting environment: Development
+2025-07-30 15:59:02.207 +03:00 [INF] Content root path: C:\Users\ASUS\Desktop\EventManagementBackend\EventService
+2025-07-30 15:59:05.153 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5248/swagger/index.html - null null
+2025-07-30 15:59:05.249 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5248/swagger/index.html - 200 null text/html;charset=utf-8 97.5264ms
+2025-07-30 15:59:05.551 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5248/swagger/v1/swagger.json - null null
+2025-07-30 15:59:05.703 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5248/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.0451ms
+2025-07-30 15:59:09.623 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5248/api/Event/export-excel - null 0
+2025-07-30 15:59:09.634 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-07-30 15:59:09.665 +03:00 [INF] Executing endpoint 'EventController.ExportExcel (EventService)'
+2025-07-30 15:59:09.701 +03:00 [INF] Route matched with {action = "ExportExcel", controller = "Event"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportExcel() on controller EventController (EventService).
+2025-07-30 15:59:09.841 +03:00 [INF] [LOG] Loglama başladı.
+2025-07-30 15:59:10.984 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[AgeRestriction], [e].[Capacity], [e].[CreatorUserId], [e].[EndDate], [e].[IsDeleted], [e].[Location], [e].[StartDate], [e].[Title]
+FROM [Events] AS [e]
+2025-07-30 15:59:12.142 +03:00 [INF] [LOG] loglama bitti
+2025-07-30 15:59:12.171 +03:00 [INF] Executing FileContentResult, sending file with download name 'etkinlikler_30592025_155911.xlsx' ...
+2025-07-30 15:59:12.188 +03:00 [INF] Executed action EventController.ExportExcel (EventService) in 2473.9859ms
+2025-07-30 15:59:12.190 +03:00 [INF] Executed endpoint 'EventController.ExportExcel (EventService)'
+2025-07-30 15:59:12.244 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5248/api/Event/export-excel - 200 6456 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 2621.0888ms
+2025-07-30 16:06:41.352 +03:00 [INF] Application is shutting down...
