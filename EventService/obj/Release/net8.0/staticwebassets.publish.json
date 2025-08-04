@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "8PAfDRZJe4PXXF3hThXGPSIPWq5zjLzPeElD7xMrkgk=",
+  "Source": "EventService",
+  "BasePath": "_content/EventService",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EventService\\wwwroot",
+      "Source": "EventService",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EventManagementBackend\\EventService\\wwwroot\\",
+      "BasePath": "_content/EventService",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\EventManagementBackend\\EventService\\wwwroot\\reports\\etkinlikler_30592025_155911.xlsx",
+      "SourceId": "EventService",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EventManagementBackend\\EventService\\wwwroot\\",
+      "BasePath": "_content/EventService",
+      "RelativePath": "reports/etkinlikler_30592025_155911.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\etkinlikler_30592025_155911.xlsx"
+    }
+  ]
+}

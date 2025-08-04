@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-public class GetUserByMailQueryHandler : IRequestHandler<GetUserByMailQuery, User>
+public class GetUserByMailQueryHandler : IRequestHandler<GetUserByMailQuery, GetUserByMailQueryResult>
 {
     private readonly IUserRepository _repository;
 
@@ -14,8 +14,14 @@ public class GetUserByMailQueryHandler : IRequestHandler<GetUserByMailQuery, Use
         _repository = repository;
     }
 
-    public async Task<User> Handle(GetUserByMailQuery request, CancellationToken cancellationToken)
+    public async Task<GetUserByMailQueryResult> Handle(GetUserByMailQuery request, CancellationToken cancellationToken)
     {
-        return await _repository.GetUserByMailAsync(request.Mail);
+        var user = await _repository.GetUserByMailAsync(request.Mail);
+        if (user == null) return null;
+        var userResponse = new GetUserByMailQueryResult
+        {
+            Mail = user.Mail
+        };
+        return userResponse;
     }
 }

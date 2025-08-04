@@ -13,3 +13,7 @@
 2025-07-30 19:18:52.142 +03:00 [INF] Application started. Press Ctrl+C to shut down.
 2025-07-30 19:18:52.145 +03:00 [INF] Hosting environment: Development
 2025-07-30 19:18:52.152 +03:00 [INF] Content root path: C:\Users\ASUS\Desktop\EventManagementBackend\UserService
+2025-07-30 19:19:31.416 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5016/swagger/index.html - null null
+2025-07-30 19:19:31.561 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5016/swagger/index.html - 200 null text/html;charset=utf-8 146.2949ms
+2025-07-30 19:19:31.786 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5016/swagger/v1/swagger.json - null null
+2025-07-30 19:19:31.984 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5016/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 198.4269ms

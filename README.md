@@ -22,6 +22,7 @@ Bu proje iki temel servisten oluşur:
 - IMemoryCache
 - Serilog
 - Swagger UI
+- Docker
 
 ## Katmanlar
 EventManagementBackend/

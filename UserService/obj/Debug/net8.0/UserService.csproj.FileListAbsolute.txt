@@ -382,3 +382,5 @@ C:\Users\ASUS\Desktop\EventManagementBackend\UserService\obj\Debug\net8.0\refint
 C:\Users\ASUS\Desktop\EventManagementBackend\UserService\obj\Debug\net8.0\UserService.pdb
 C:\Users\ASUS\Desktop\EventManagementBackend\UserService\obj\Debug\net8.0\UserService.genruntimeconfig.cache
 C:\Users\ASUS\Desktop\EventManagementBackend\UserService\obj\Debug\net8.0\ref\UserService.dll
+C:\Users\ASUS\Desktop\EventManagementBackend\UserService\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\ASUS\Desktop\EventManagementBackend\UserService\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

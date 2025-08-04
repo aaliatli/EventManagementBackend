@@ -89,3 +89,18 @@ FROM [Events] AS [e]
 2025-07-30 15:59:12.190 +03:00 [INF] Executed endpoint 'EventController.ExportExcel (EventService)'
 2025-07-30 15:59:12.244 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5248/api/Event/export-excel - 200 6456 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 2621.0888ms
 2025-07-30 16:06:41.352 +03:00 [INF] Application is shutting down...
+2025-07-30 19:21:16.104 +03:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-30 19:21:16.276 +03:00 [INF] Now listening on: http://localhost:5248
+2025-07-30 19:21:16.280 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-30 19:21:16.281 +03:00 [INF] Hosting environment: Development
+2025-07-30 19:21:16.283 +03:00 [INF] Content root path: C:\Users\ASUS\Desktop\EventManagementBackend\EventService
+2025-07-30 19:21:21.974 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5248/swagger/index.html - null null
+2025-07-30 19:21:22.100 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5248/swagger/index.html - 200 null text/html;charset=utf-8 126.8904ms
+2025-07-30 19:21:22.341 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5248/swagger/v1/swagger.json - null null
+2025-07-30 19:21:22.540 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5248/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 199.8093ms
+2025-07-30 20:16:47.609 +03:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-30 20:16:47.763 +03:00 [INF] Now listening on: http://localhost:5248
+2025-07-30 20:16:47.767 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-30 20:16:47.769 +03:00 [INF] Hosting environment: Development
+2025-07-30 20:16:47.771 +03:00 [INF] Content root path: C:\Users\ASUS\Desktop\EventManagementBackend\EventService
+2025-07-30 23:13:01.262 +03:00 [INF] Application is shutting down...

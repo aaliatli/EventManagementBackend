@@ -7,6 +7,5 @@ public class User
     public string Mail { get; set; }
     public string Password { get; set; }
     public bool IsDeleted { get; set; } = false;
-    public ICollection<UserEvent> UserEvents { get; set; } = new List<UserEvent>();
 
 }

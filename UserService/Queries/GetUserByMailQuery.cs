@@ -1,5 +1,5 @@
 using MediatR;
-public class GetUserByMailQuery : IRequest<User>
+public class GetUserByMailQuery : IRequest<GetUserByMailQueryResult>
 {
     public string Mail { get; set; }
 }

@@ -1,5 +1,4 @@
 using EventService.Data;
-using EventService.Models;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -116,33 +115,13 @@ public class EventController : ControllerBase
 
         var user = await response.Content.ReadFromJsonAsync<UserDto>();
 
-        var eventEntity = await _mediator.Send(new GetEventByIdQuery { Id = eventId });
-        if (eventEntity == null)
+        var result = await _mediator.Send(new RegisterToEventCommand
         {
-            return NotFound("Etkinlik bulunamadı.");
-        }
-
-        var userEventCount = await _context.UserEvents.CountAsync(ue => ue.EventId == eventId);
-        if (userEventCount > eventEntity.Capacity)
-        {
-            return BadRequest("Etkinlik kapasitesi dolmuş.");
-        }
-
-        if (eventEntity.AgeRestriction > 0 && user.Age < eventEntity.AgeRestriction)
-        {
-            return BadRequest($"Bu etkinlik için minimum yaş sınırı: {eventEntity.AgeRestriction}");
-        }
-
-        var userEvent = new UserEvent
-        {
+            EventId = eventId,
             UserId = userId,
-            EventId = eventId
-        };
+        });
 
-        _context.UserEvents.Add(userEvent);
-        await _context.SaveChangesAsync();
-
-        return Ok("Etkinliğe kayıt olundu. ");
+        return Ok(result);
     }
 
     [HttpPost("export-excel")]

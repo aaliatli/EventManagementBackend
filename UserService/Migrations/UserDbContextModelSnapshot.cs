@@ -54,35 +54,6 @@ namespace UserService.Migrations
 
                     b.ToTable("Users");
                 });
-
-            modelBuilder.Entity("UserEvent", b =>
-                {
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("EventId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("UserId", "EventId");
-
-                    b.ToTable("UserEvents");
-                });
-
-            modelBuilder.Entity("UserEvent", b =>
-                {
-                    b.HasOne("User", "User")
-                        .WithMany("UserEvents")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("User", b =>
-                {
-                    b.Navigation("UserEvents");
-                });
 #pragma warning restore 612, 618
         }
     }

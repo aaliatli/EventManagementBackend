@@ -3,7 +3,7 @@ using MediatR;
 
 namespace UserService.Models
 {
-    public class GetUserByIdQuery : IRequest<User>
+    public class GetUserByIdQuery : IRequest<GetUserByIdQueryResult>
     {
         public Guid Id { get; set; }
     } 

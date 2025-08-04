@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ASUS\\Desktop\\EventManagementBackend\\EventService\\wwwroot\\reports\\etkinlikler_30592025_155911.xlsx",
+      "PackagePath": "staticwebassets\\reports\\etkinlikler_30592025_155911.xlsx"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.EventService.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.EventService.props",
+      "PackagePath": "build\\EventService.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.EventService.props",
+      "PackagePath": "buildMultiTargeting\\EventService.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.EventService.props",
+      "PackagePath": "buildTransitive\\EventService.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

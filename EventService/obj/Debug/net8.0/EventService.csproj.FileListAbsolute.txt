@@ -391,3 +391,10 @@ C:\Users\ASUS\Desktop\EventManagementBackend\EventService\obj\Debug\net8.0\Event
 C:\Users\ASUS\Desktop\EventManagementBackend\EventService\obj\Debug\net8.0\EventService.genruntimeconfig.cache
 C:\Users\ASUS\Desktop\EventManagementBackend\EventService\obj\Debug\net8.0\ref\EventService.dll
 C:\Users\ASUS\Desktop\EventManagementBackend\EventService\bin\Debug\net8.0\EventService.staticwebassets.runtime.json
+C:\Users\ASUS\Desktop\EventManagementBackend\EventService\bin\Debug\net8.0\publish-test\web.config
+C:\Users\ASUS\Desktop\EventManagementBackend\EventService\bin\Debug\net8.0\publish-test\appsettings.Development.json
+C:\Users\ASUS\Desktop\EventManagementBackend\EventService\bin\Debug\net8.0\publish-test\appsettings.json
+C:\Users\ASUS\Desktop\EventManagementBackend\EventService\bin\Debug\net8.0\publish-test\EventService.deps.json
+C:\Users\ASUS\Desktop\EventManagementBackend\EventService\bin\Debug\net8.0\publish-test\EventService.runtimeconfig.json
+C:\Users\ASUS\Desktop\EventManagementBackend\EventService\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\ASUS\Desktop\EventManagementBackend\EventService\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
