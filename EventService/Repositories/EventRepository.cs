@@ -31,8 +31,7 @@ public class EventRepository : IEventRepository
 
     public async Task<List<Event>> GetCurrentEventsAsync()
     {
-        
-        return await _context.Events.Where(e => e.StartDate >= DateTime.Today).Select(e => new Event { Title = e.Title}).ToListAsync();
+        return await _context.Events.Where(e => e.StartDate >= DateTime.Today).Select(e => new Event { Title = e.Title, Location = e.Location, StartDate = e.StartDate, EndDate = e.EndDate, Capacity = e.Capacity, AgeRestriction = e.AgeRestriction}).ToListAsync();
     }
     public async Task<Event> GetEventById(Guid Id)
     {
