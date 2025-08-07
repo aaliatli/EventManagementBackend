@@ -1,0 +1,47 @@
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql_container
+    environment:
+      SA_PASSWORD: "AliDocker123!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1434:1433"
+    volumes:
+      - mssql_data:/var/opt/mssql
+    networks:
+      - backend
+
+  userservice:
+    build:
+      context: ./UserService
+      dockerfile: Dockerfile
+    container_name: userservice_container
+    ports:
+      - "5016:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - mssql
+    networks:
+      - backend
+
+  eventservice:
+    build:
+      context: ./EventService
+      dockerfile: Dockerfile
+    container_name: eventservice_container
+    ports:
+      - "5248:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - mssql
+    networks:
+      - backend
+
+volumes:
+  mssql_data:
+
+networks:
+  backend:
