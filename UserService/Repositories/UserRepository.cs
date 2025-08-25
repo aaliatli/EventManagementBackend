@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 public class UserRepository : IUserRepository
 {
-    public readonly UserDbContext _context;
+    private readonly UserDbContext _context;
 
     public UserRepository(UserDbContext context)
     {
